@@ -10,6 +10,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import WhatIDo from './WhatIDo/WhatIDo'
 import WhatILove from './WhatILove/WhatILove'
+import WhatImLearning from './WhatImLearning/WhatImLearning'
 
 function a11yProps(index) {
     return {
@@ -62,7 +63,7 @@ function Home(){
                     <WhatILove />
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
-                    <h2 className='sectionTitle'>I'm expanding my skills to mobile development.</h2>
+                    <WhatImLearning />
                 </CustomTabPanel>
             </Box>
             </div>
