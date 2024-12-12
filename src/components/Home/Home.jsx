@@ -1,19 +1,81 @@
 import './Home.css'
-import { Card } from "@mui/material"
+import { Card, ThemeProvider } from "@mui/material"
 import { CardContent } from '@mui/material'
 import { Typography } from '@mui/material'
-function Home(){
+import { useTheme } from '@mui/material/styles'
+import { useState } from 'react'
+import CustomTabPanel from '../CustomTabPanel/CustomTabPanel';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
 
+function a11yProps(index) {
+    return {
+      id: `simple-tab-${index}`,
+      'aria-controls': `simple-tabpanel-${index}`,
+    };
+  }
+
+function Home(){
+    const [value, setValue] = useState(0);
+    const theme = useTheme();
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
 
     //TODO: add what i do / what i love / what i'm learning tabs
     return(
+        <ThemeProvider theme={theme}>
         <div>
             <div className='intro'>
                 <h1>
                     Aoife McCullough is a software engineer.
                 </h1>
             </div>
+            <div className='mainContainer'>
+            <Box sx={{ width: '100%', marginTop: '1%'}}>
+                <Box sx={{ borderBottom: 0, borderColor: 'divider' }}>
+                <Tabs 
+                value={value} 
+                onChange={handleChange} 
+                aria-label="basic tabs example"
+                
+                TabIndicatorProps={{sx: { bgcolor: "#FF9B54"}, }}
+                centered
+                sx = {{
+                    "& button": {color: '#E0E4E8'},
+                    "& button:focus": {color: '#FF9B54'},
+                    "& button.Mui-selected": {color: '#FF9B54'},
+                    "& MuiTabs-indicator": {backgroundColor: '#FF9B54'},
+                }}>
+                    <Tab label="What I Do" {...a11yProps(0)}/>
+                    <Tab label="What I Love" sx={{color: 'text.lightgrey'}} {...a11yProps(1)} />
+                    <Tab label="What I'm Learning" {...a11yProps(2)} />
+                </Tabs>
+                </Box>
+                <CustomTabPanel value={value} index={0}>
+                    <h2 className='sectionTitle'>I Build Websites.</h2>
+                    <p className= 'info'>I'm an experienced web-dev.</p>
+                    <p className= 'info'>I use JS, React, Redux, and Axios.</p>
+                    <div className='logosContainer'>
+                        <img className='jsLogo' src='images\js.png' />
+                        <img className='reactLogo' src='images\react.png' />
+                        <img className='reduxLogo' src='images\redux.png' />
+                        <img className='axiosLogo' src='images\axios.png' />
+                    </div>
+                    
+                </CustomTabPanel>
+                <CustomTabPanel value={value} index={1}>
+                    <h2 className='sectionTitle'>I love the Island Fox (Urocyon Littoralis)</h2>
+                </CustomTabPanel>
+                <CustomTabPanel value={value} index={2}>
+                    <h2 className='sectionTitle'>I'm expanding my skills to mobile development.</h2>
+                </CustomTabPanel>
+            </Box>
+            </div>
         </div>
+        </ThemeProvider>
+        
     )
 }
 

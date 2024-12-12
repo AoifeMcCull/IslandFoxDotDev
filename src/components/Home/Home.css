@@ -1,7 +1,7 @@
 
 .intro h1{
     font-family: "Tomorrow";
-    font-weight: 400;
+    font-weight: 300;
     overflow: hidden;
     font-size: 143%;
     width: 30%;
@@ -31,3 +31,62 @@
     from, to { border-color: transparent }
     50% { border-color: var(--accent-3); }
   }
+
+.sectionTitle{
+    text-align: center;
+    font-family: 'Tomorrow';
+    font-weight: 300;
+    color: var(--accent-3);
+}
+
+.info{
+    text-align: center;
+    font-family: 'Tomorrow';
+    font-weight: 300;
+    color: var(--light-grey);
+}
+
+.logosContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.jsLogo{
+    animation: jsRight 1.8s forwards;
+    transform: translateX(-150%);
+}
+
+.reactLogo{
+    animation: reactDown 1.8s 0.1s forwards;
+    transform: translateY(-150%);
+}
+
+.reduxLogo{
+    animation: reduxUp 1.8s 0.2s forwards;
+    transform: translateY(150%);
+}
+
+.axiosLogo{
+    padding: 0px 16px;
+    transform: translateX(150%);
+    animation: axiosLeft 1.8s ease 0.3s forwards;
+}
+
+@keyframes jsRight {
+    100% { transform: translateX(0%)}
+}
+
+@keyframes reactDown {
+    100% {transform: translateY(0%)}
+}
+
+@keyframes reduxUp {
+    100% {transform: translateY(0%)}
+}
+
+@keyframes axiosLeft {
+    100% { transform: translateX(0%)}
+}
