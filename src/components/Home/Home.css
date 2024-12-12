@@ -98,7 +98,7 @@
 }
 
 .leftLogo{
-    animation: halfRight 2s ease 0.6s forwards;
+    animation: halfRight 2s ease 1s forwards;
     transform: translateX(-200%);
 }
 
@@ -107,7 +107,7 @@
 }
 
 .rightLogo{
-    animation: halfLeft 2s ease 0.6s forwards;
+    animation: halfLeft 2s ease 1s forwards;
     transform: translateX(200%);
 }
 
