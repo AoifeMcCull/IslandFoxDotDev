@@ -1,0 +1,67 @@
+.logosContainer{
+    width: 320px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.jsLogo{
+    animation: jsRight 1.8s forwards;
+    transform: translateX(-150%);
+}
+
+.reactLogo{
+    animation: reactDown 1.8s 0.1s forwards;
+    transform: translateY(-150%);
+}
+
+.reduxLogo{
+    animation: reduxUp 1.8s 0.2s forwards;
+    transform: translateY(150%);
+}
+
+.axiosLogo{
+    padding: 0px 16px;
+    transform: translateX(150%);
+    animation: axiosLeft 1.8s ease 0.3s forwards;
+}
+
+@keyframes jsRight {
+    100% { transform: translateX(0%)}
+}
+
+@keyframes reactDown {
+    100% {transform: translateY(0%)}
+}
+
+@keyframes reduxUp {
+    100% {transform: translateY(0%)}
+}
+
+@keyframes axiosLeft {
+    100% { transform: translateX(0%)}
+}
+
+.verticalSpacer{
+    height: 20px;
+}
+
+.leftLogo{
+    animation: halfRight 2s ease 1s forwards;
+    transform: translateX(-200%);
+}
+
+@keyframes halfRight {
+    100% {transform: translateX(0%);}
+}
+
+.rightLogo{
+    animation: halfLeft 2s ease 1s forwards;
+    transform: translateX(200%);
+}
+
+@keyframes halfLeft {
+    100% {transform: translateX(0%);}
+}
