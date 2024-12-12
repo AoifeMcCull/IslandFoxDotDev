@@ -4,22 +4,15 @@ import { CardContent } from '@mui/material'
 import { Typography } from '@mui/material'
 function Home(){
 
-    const introCard = (
-        <CardContent>
-            <Typography variant="h5" component="div">
-                Ferrix
-            </Typography>
-            <Typography variant="body2">
-                is gay as balls
-            </Typography>
-        </CardContent>
-    )
 
+    //TODO: add what i do / what i love / what i'm learning tabs
     return(
         <div>
-            <Card className="introCard">
-                {introCard}
-            </Card>
+            <div className='intro'>
+                <h1>
+                    Aoife McCullough is a software engineer.
+                </h1>
+            </div>
         </div>
     )
 }
