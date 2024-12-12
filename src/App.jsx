@@ -2,6 +2,7 @@ import './App.css'
 import Nav from './components/Nav/Nav'
 import Home from './components/Home/Home'
 import { createTheme } from '@mui/material'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
@@ -26,7 +27,13 @@ function App() {
   return (
     <>
       <Nav />
-      <Home theme={theme}/>
+      <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />}></Route>
+      </Routes>
+
+
+      </BrowserRouter>
     </>
   )
 }

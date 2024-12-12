@@ -26,7 +26,6 @@ function Home(){
         setValue(newValue);
     };
 
-    //TODO: add what i do / what i love / what i'm learning tabs
     return(
         <ThemeProvider theme={theme}>
         <div>
