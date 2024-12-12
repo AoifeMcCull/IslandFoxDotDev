@@ -7,6 +7,17 @@
     
 }
 
+@media only screen and (max-width: 780px){
+    .imageContainer{
+        flex-direction: column;
+    }
+    .oneImage{
+        max-width: 90%;
+    }
+    .oneImage img{
+        max-width: 100%;
+    }
+}
 .oneImage{
     padding: 5px;
     background-color: var(--component-darkgrey);
