@@ -1,0 +1,20 @@
+.imageContainer{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.oneImage{
+    padding: 5px;
+    background-color: var(--component-darkgrey);
+    border-radius: 5px;
+    padding-bottom: 0px;
+    transition: 0.3s;
+}
+
+.oneImage:hover{
+    transform:translate(0, -5px);
+}

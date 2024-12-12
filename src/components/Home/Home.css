@@ -4,13 +4,13 @@
     font-weight: 300;
     overflow: hidden;
     font-size: 143%;
-    width: 30%;
+    width: 0%;
     border-right: .15em solid var(--accent-3);
     white-space: nowrap;
     margin: 0 auto;
     margin-top: 10vh;
     letter-spacing: .15em;
-    animation: typing 3.5s steps(40, end), blink .75s infinite;
+    animation: typing 3.5s steps(40, end) 3s forwards, blink .75s infinite;
 }
 
 @media only screen and (max-width: 780px) {
