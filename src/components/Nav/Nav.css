@@ -1,0 +1,55 @@
+
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 64px;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: var(--accent-3);
+    font-family: "Tomorrow";
+}
+
+.navTitle{
+    width:30%;
+    font-size: 200%;
+    font-weight: 200;
+    padding-left:15px;
+    width:fit-content;
+    color: var(--primary-color);
+    align-self: center;
+}
+
+
+.navRight{
+    color: var(--primary-color);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 150%;
+    padding-right: 2%;
+    font-weight: 300;
+    font-style: italic;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+NavItem{
+    color: var(--primary-color);
+    align-self: center;
+}
+
+@media only screen and (max-width: 768px){
+
+    .navTitle{
+        font-size: 100%;
+        font-weight: 300;
+    }
+    .navRight{
+        width: 70%;
+        font-size: 100%;
+        padding-right: 1%;
+    }
+}
