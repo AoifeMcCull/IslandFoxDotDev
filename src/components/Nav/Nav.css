@@ -39,6 +39,7 @@
 NavItem{
     color: var(--primary-color);
     align-self: center;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px){
@@ -52,4 +53,9 @@ NavItem{
         font-size: 100%;
         padding-right: 1%;
     }
+}
+
+.navRight a{
+    color: var(--primary-color);
+    font-weight: 400;
 }

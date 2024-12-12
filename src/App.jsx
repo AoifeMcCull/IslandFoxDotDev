@@ -1,8 +1,9 @@
 import './App.css'
 import Nav from './components/Nav/Nav'
 import Home from './components/Home/Home'
+import Resume from './components/Resume/Resume'
 import { createTheme } from '@mui/material'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 
 
 function App() {
@@ -26,14 +27,17 @@ function App() {
 
   return (
     <>
-      <Nav />
+      
       <BrowserRouter>
+      <Nav />
       <Routes>
         <Route index element={<Home />}></Route>
+        <Route path='resume' element={<Resume />}></Route>
       </Routes>
 
 
       </BrowserRouter>
+      <Outlet />
     </>
   )
 }

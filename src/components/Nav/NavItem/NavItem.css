@@ -1,3 +1,7 @@
 .NavItem{
     cursor: pointer;
 }
+
+.NavItem p{
+    font-weight: 400;
+}

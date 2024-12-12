@@ -1,9 +1,14 @@
 import './Nav.css';
 import NavItem from './NavItem/NavItem';
+import { Link } from 'react-router-dom';
 function Nav(){
 
     const gotoGithub = () => {
         window.location.href = 'https://github.com/AoifeMcCull';
+    }
+
+    const gotoResume = () => {
+        history.pushState('/resume');
     }
 
     return(
@@ -12,11 +17,11 @@ function Nav(){
                 islandfox.dev
             </div>
             <div className='navRight'>
-                <NavItem itemName='home' />
+                <Link to='/'>home</Link>
                 /
                 <NavItem itemName='portfolio' onClick={gotoGithub} />
                 /
-                <NavItem itemName='resume' />
+                <Link to='/resume'>resume</Link>
                 /
                 <NavItem itemName='contact' />
             </div>
