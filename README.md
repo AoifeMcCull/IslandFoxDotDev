@@ -1,8 +1,4 @@
-# React + Vite
+# Islandfox.dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is my personal website, hosted on Cloudflare pages at https://islandfox.dev . It's written in React, with Material UI components and styling.
+It was made as a challenge for myself, to see how good of a website I could make in only 12 hours. Since then I've added additional improvements, but I'm very happy with how it came out in the 12 hours.
