@@ -2,6 +2,7 @@ import './App.css'
 import Nav from './components/Nav/Nav'
 import Home from './components/Home/Home'
 import Resume from './components/Resume/Resume'
+import Contact from './components/Contact/Contact'
 import { createTheme } from '@mui/material'
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route index element={<Home />}></Route>
         <Route path='resume' element={<Resume />}></Route>
+        <Route path='contact' element={<Contact />}></Route>
       </Routes>
 
 

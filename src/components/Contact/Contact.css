@@ -1,0 +1,29 @@
+.contactsContainer{
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.contactContainer a{
+    color: var(--primary-color);
+}
+.contact{
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-3);
+    border-radius: 15px;
+    color: var(--primary-color);
+    z-index: 3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.centered{
+    text-align: center;
+}

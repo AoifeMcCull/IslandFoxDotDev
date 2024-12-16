@@ -23,7 +23,7 @@ function Nav(){
                 /
                 <Link to='/resume'>resume</Link>
                 /
-                <NavItem itemName='contact' />
+                <Link to='/contact'>contact</Link>
             </div>
         </div>
     )
