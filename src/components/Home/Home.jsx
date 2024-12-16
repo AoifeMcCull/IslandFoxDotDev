@@ -28,7 +28,7 @@ function Home(){
 
     return(
         <ThemeProvider theme={theme}>
-        <div>
+        <div className='homeContainer'>
             <div className='intro'>
                 <h1>
                     Aoife McCullough is a software engineer.

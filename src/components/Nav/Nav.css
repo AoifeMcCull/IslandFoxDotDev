@@ -10,6 +10,7 @@
     width: 100%;
     background-color: var(--accent-3);
     font-family: "Tomorrow";
+    z-index: 5;
 }
 
 .navTitle{

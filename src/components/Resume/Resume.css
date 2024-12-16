@@ -1,0 +1,37 @@
+.resumeDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Tomorrow';
+    height: calc(100vh -64px);
+    margin-top: 86px;
+    overflow:scroll;
+}
+
+.topLine{
+    color: var(--accent-3);
+}
+
+.resumeDownloads{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.Download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.downloadImage{
+    width: 40px;
+    height: 40px;
+}
+
+.experienceDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

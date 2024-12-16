@@ -23,7 +23,7 @@ function WhatIDo(){
                 </div>
 
                 <h2 className='sectionTitle'>I build Mobile Apps.</h2>
-                <p className='info'>I'm building the Body Confidence 100 app for iOS and Android for my client.</p>
+                <p className='info'>I'm in the process of getting my first mobile app approved to the App Store and Google Play.</p>
         </div>
     )
 }

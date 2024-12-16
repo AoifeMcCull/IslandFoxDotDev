@@ -1,9 +1,13 @@
 
+.homeContainer{
+    height: calc(100vh -64px);
+    margin-top: 86px;
+}
 .intro h1{
     font-family: "Tomorrow";
     font-weight: 300;
     overflow: hidden;
-    font-size: 143%;
+    font-size: 1.2vw;
     width: 0%;
     border-right: .15em solid var(--accent-3);
     white-space: nowrap;
@@ -22,6 +26,8 @@
         border-right: .15em solid var(--accent-3);
     }
 }
+
+
 
 @keyframes typing {
     from {width: 1%;}
