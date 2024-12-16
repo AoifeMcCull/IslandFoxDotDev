@@ -1,25 +1,45 @@
 import './Resume.css'
 import pdf from '../../assets/Aoife McCullough resume 2024.pdf';
 function Resume() {
-
+    //TODO: make skills & education render as a column to the left of Experience
     const pdfDownload = () => {
+        fetch('../../assets/Aoife McCullough resume 2024.pdf').then((response) => {
+            response.blob().then((blob) => {
+                let url= window.URL.createObjectURL(blob);
+                let a = document.createElement('a');
+                a.href = url;
+                a.download = 'Aoife McCullough resume 2024.pdf';
+                a.click();
+            })
+        })
+    }
 
+    const docxDownload = () => {
+        fetch('../../assets/Aoife McCullough resume 2024.docx').then((response) => {
+            response.blob().then((blob) => {
+                let url= window.URL.createObjectURL(blob);
+                let a = document.createElement('a');
+                a.href = url;
+                a.download = 'Aoife McCullough resume 2024.docx';
+                a.click();
+            })
+        })
     }
 
     return(
         <div className='resumeDiv'>
             <div className='resumeDownloads'>
-                <div >
-                    <a className='Download' href={pdf}>
+                <div onClick={pdfDownload}>
+                    <p className='Download'>
                     <img  className='downloadImage' src='/pdf.png'/>
                     Download PDF
-                    </a>
+                    </p>
                 </div>
-                <div>
-                    <a className='Download' href={pdf}>
+                <div onClick={docxDownload}>
+                    <p className='Download'>
                     <img  className='downloadImage' src='/docx.png'/>
                     Download DOCX
-                    </a>
+                    </p>
                 </div>
             </div>
             <div className='topLine'>
@@ -58,7 +78,7 @@ function Resume() {
                 <p className='info'>Utilized React, node-cron, nodemailer, and PostgreSQL</p>
                 <p className='Location'>ITS, Inc</p>
                 <div className='twoColumn'>
-                    <p className='twoColumn'><strong>Backend Software Engineering Intern</strong></p>
+                    <p><strong>Backend Software Engineering Intern</strong></p>
                     <p>May 2019-August 2019</p>
                 </div>
                 <p className='info'>Continuously updated Java backend, fixed bug reports, and created new database functionality</p>
@@ -78,7 +98,7 @@ function Resume() {
                     <p>August 2018-May 2023</p>
                 </div>
                 <p>Courses:</p>
-                <p className='info'>Algorithms, Database Management Systems, Digital Logic, Calculus 2, Discrete Computational Structures, Discrete Math, Embedded Systems, Advanced Programming Techniques</p>
+                <p className='info'>Algorithms, Database Management Systems, Digital Logic, Calculus 2, Discrete Computational Structures,</p><p className='info'>Discrete Math, Embedded Systems, Advanced Programming Techniques</p>
                 <p className='info'>Philosophy, Ethics, Gender Studies</p>
                 <p>Student Organizations</p>
                 <p className='info'>Soil and Water Conservation Club</p>

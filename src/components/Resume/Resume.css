@@ -6,6 +6,7 @@
     height: calc(100vh -64px);
     margin-top: 86px;
     overflow:scroll;
+    text-align: center;
 }
 
 .topLine{
@@ -22,7 +23,11 @@
 .Download{
     display: flex;
     flex-direction: column;
+    cursor:pointer;
     align-items: center;
+    margin: 0px 0px;
+    color: #4e56e6;
+    font-weight: 500;
 }
 
 .downloadImage{
@@ -34,4 +39,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.sectionHead{
+    color: var(--accent-3);
+    text-align: center;
+}
+
+.twoColumn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    white-space: nowrap;
+    margin: auto;
+}
+
+.Location{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: var(--accent-1);
+}
+
+.catHead{
+    font-weight: 500;
+    font-size: 1.05vw;
+}
+
+.lowHead{
+    font-size: 1.01vw;
+    color: var(--accent-2);
 }
